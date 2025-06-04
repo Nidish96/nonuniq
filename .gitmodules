@@ -1,0 +1,3 @@
+[submodule "ROUTINES/export_fig"]
+	path = ROUTINES/export_fig
+	url = git@github.com:altmany/export_fig.git
