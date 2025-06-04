@@ -8,7 +8,7 @@ set(0, 'DefaultLegendInterpreter', 'latex');
 set(0,'defaultAxesFontSize',13);
 
 savfigs = true;
-
+
 %%
 kt = 3;
 kn = 6;
@@ -156,7 +156,6 @@ for mpl = 1:5
     end
 end
 
-
 %% Plot with Filled region
 fT = fTst;
 

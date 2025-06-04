@@ -1,0 +1,37 @@
+#+title: Codes for the paper "Vibration Response Variability in Friction-Damped Systems: Quantification of the Influence of Contact and Traction Uncertainties"
+#+author: Nidish Narayanaa Balaji (IITM Chennai, India) and Erhan Ferhatoglu (TOBB Ankara, Türkiye)
+
+* Overview
+This repository contains MATLAB code that conducts nonlinear modal analysis on a 3 mass planar frictional oscillator using the Extended Periodic Motion Concept (through Harmonic Balance). All the results for the paper can be generated from the scripts provided here.
+
+* Guidelines for parsing the code
++ All the routines are in UPPER CASE.
++ All the scripts are prefixed with an alphabet ("a_hbfresp.m", for example). The alphabets encode the recommended sequence for reading the code.
+  
+** Descriptions of provided scripts
+
+| a_hbfresp.m          | HB based forced response analysis                 |
+| b_epmc.m             | EPMC based NMA                                    |
+| c_chpar_epmc.m       | Checking out different parameters                 |
+| c1_demobbs.m         | Demo variations w.r.t. m                          |
+| c2_demovarns.m       | Demo variations w.r.t. mu                         |
+| c3_varks.m           | Demo variations w.r.t. kt, kn                     |
+| d_pcesims_epmc.m     | Conduct simulations at quadrature pts             |
+| d0_pce_errsims.m     | (obsolete) Simulate failed case                   |
+| d1_pcepostproc.m     | (obsolete) Basic postprocessing                   |
+| d2_pcepostproc_lsc.m | Post-process PCE after amplitude scaling          |
+|----------------------+---------------------------------------------------|
+| za_pcetrial.m        | PCE with analytical frictional oscillator         |
+| zb_rtracdemo.m       | Residual traction demo for presentations          |
+| zc_betadist.m        | Show how beta distribution looks like             |
+| zd_kmupdfs.m         | Show how mu and stiffness distributions look like |
+| z_erhan.m            | Demo of PCE for SDOF case (copy of za)            |
+
+** Descriptions of provided routines
+
+| HBRESFUN.m   | HB Forced response residue function. |
+| EPMCRESFUN.m | HB based EPMC Residue Function.      |
+| JENK2D.m     | Evaluate 2D Jenkins element.         |
+
+
+
